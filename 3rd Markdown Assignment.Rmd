@@ -1,0 +1,26 @@
+---
+title: "Third Markdown Assignment"
+author: "Castillo, Salvador, Sison, and Zablan"
+date: "7/27/2021"
+output: html_document
+---
+<style type="text/css">
+  body{
+  font-family: Times New Roman;
+  font-size: 12pt;
+  text-align: justify;
+}
+
+<!--
+ .tab { margin-left: 40px; color:DarkSlateGray;font-size: 14pt; }
+-->
+<!--
+ .tab-body { margin-left: 40px;}
+-->
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
