@@ -1,14 +1,15 @@
 ---
 title: "Third Markdown Assignment"
-author: "Castillo, Salvador, Sison, and Zablan"
-date: "7/27/2021"
+author: "Castillo, Salvador, Sison, and Zablan | ENGG 21 B"
+date: "July 27, 2021"
 output: html_document
 ---
 <style type="text/css">
   body{
   font-family: Times New Roman;
-  font-size: 12pt;
+  font-size: 13pt;
   text-align: justify;
+  background-color:#EDF5E1;
 }
 
 <!--
@@ -22,26 +23,153 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<hr>
 
-### Introduction ###
+<center>
+## Electric vehicle charging stations in the workplace with high-resolution data from casual and habitual users 
+Omar Isaac Asensio, M. Cade Lawson, & Camila Z. Apablaza
+</center>
 
-In the study by Asensio et.al, real-time Electric vehicle consumption data are not easily accessible and shared across service providers. These can be attributed to how station hosts have little to no incentive to share data with other stakeholders and charging stations being owned by private entities where the data is concentrated by digital platforms and network providers; both restricting access to real-time data. how This makes the analysis of energy used for emerging transportation quite tedious for researchers and policymakers, such as when trying to investigate patterns of charging demand at the high resolution needed to understand individual-level behavior. As a consequence, prevailing methods have primarily relied on the use of simulated data, self-reported surveys and interview data which was inaccurate as they which do not contain real-time information sometimes present challenges such as self-report bias.
+<hr>
+### **Introduction** ###
+
+In the study by Asensio et.al, real-time Electric vehicle consumption data are not easily accessible and shared across service providers. These can be attributed to how station hosts have little to no incentive to share data with other stakeholders and charging stations being owned by private entities where the data is concentrated by digital platforms and network providers; both restricting access to real-time data. This makes the analysis of energy used for emerging transportation quite tedious for researchers and policymakers, such as when trying to investigate patterns of charging demand at the high resolution needed to understand individual-level behavior. As a consequence, prevailing methods have primarily relied on the use of simulated data, self-reported surveys and interview data which was inaccurate as they which do not contain real-time information sometimes present challenges such as self-report bias. </p>
 
 To combat this certain problem, the researchers decided to describe a high-resolution data set of EV charging transactions from a large workplace charging program, which included real-time data about 
-charging usage from various EV consumer types such as managers and non-managers, casual and habitual users, 
-and early and late adopters in a large corporate setting. The data from the data set are then sorted into 18 different variables, which could be used to understand the impacts of EV station consumption at a micro-level, optimize revenue models, address questions in several possible areas of inquiry and many others that are related to Electric vehicle consumption data.
+charging usage from various EV consumer types such as managers and non-managers, casual and habitual users, and early and late adopters in a large corporate setting. The data from the data set are then sorted into 18 different variables, which could be used to understand the impacts of EV station consumption at a micro-level, optimize revenue models, address questions in several possible areas of inquiry and many others that are related to Electric vehicle consumption data. </p>
 
-After the data was collected and sorted, it is then divided into 3 pairs: Frequency of usage, Stage of adoption and Employee type, which are then divided into five subcategories: duration of charging session (in hours), total consumption (in kWh), repeat transaction per user, session revenue (in USD), and estimated one way daily commute distance (in miles). However, we ultimately decided to do a hypothesis testing for the duration of charging session in hours for casual and habitual users. We decided to compare the two and test if there are charging session of Habitual users are longer than Casual Users. A habitual user is defined as someone who logged more than the median of 19 charging sessions over the course of the data collection period, while a casual user is someone who logged fewer than 19 sessions. The type of users could be used by companies and businesses in order to improve their services, as well as to which type of consumer they should cater more and to determine certain marketing strategies they could enact based on the data to effectively provide their services to their consumers. 
+After the data was collected and sorted, it is then divided into 3 pairs: Frequency of usage, Stage of adoption and Employee type, which are then divided into five subcategories: duration of charging session (in hours), total consumption (in kWh), repeat transaction per user, session revenue (in USD), and estimated one way daily commute distance (in miles). However, we ultimately decided to do a hypothesis testing for the duration of charging session in hours for casual and habitual users. We decided to compare the two and test if there are charging session of Habitual users are longer than Casual Users. A habitual user is defined as someone who logged more than the median of 19 charging sessions over the course of the data collection period, while a casual user is someone who logged fewer than 19 sessions. The type of users could be used by companies and businesses in order to improve their services, as well as to which type of consumer they should cater more and to determine certain marketing strategies they could enact based on the data to effectively provide their services to their consumers.</p>
 
-### Methodology ###
+<hr>
+### **Methodology** ###
 
-The database contains high-resolution data for 3,395 electric vehicle charging sessions from one of the largest workplace charging programs in the United States. Each charging session contains data about the user who logged on each session (such as vehicle type, commute distance, and manager or non-manager status), unique identifiers for the specific charging station and the location where a session was initiated, as well as various usage characteristics (energy output in kWh, time spent charging, and U.S. dollars spent). All data was collected and aggregated automatically and digitally without the need of human readings on a mobile platform used by employees at the firm. Users could also view their EV charging time and visualize their session-level energy consumption and any payments to a network operator. The charging stations were accessible to registered users 24 hours per day, which means that access to the stations was restricted to employees and visitors only. 
+The database contains high-resolution data for 3,395 electric vehicle charging sessions from one of the largest workplace charging programs in the United States. Each charging session contains data about the user who logged on each session (such as vehicle type, commute distance, and manager or non-manager status), unique identifiers for the specific charging station and the location where a session was initiated, as well as various usage characteristics (energy output in kWh, time spent charging, and U.S. dollars spent). All data was collected and aggregated automatically and digitally without the need of human readings on a mobile platform used by employees at the firm. Users could also view their EV charging time and visualize their session-level energy consumption and any payments to a network operator. The charging stations were accessible to registered users 24 hours per day, which means that access to the stations was restricted to employees and visitors only.</p>
 
-Since the data was already collected and sorted, we just had to identify the parameters to be used for our hypothesis testing. We have two different populations to be used for the hypothesis test, 3119 for Habitual users and 276 for Casual users which are based from the number of electric vehicle charging sessions. They also have different means and standard deviations, with the Habitual Users having a mean of 2.85 hours in charging time or duration and a standard deviation of 1.52, while the Casual Users having a mean of 2.7 hours in charging time or duration and a standard deviation of 1.34. We would also use a 5% confidence interval for the hypothesis test to determine if our claim was supported. 
+Since the data was already collected and sorted, we just had to identify the parameters to be used for our hypothesis testing. We have two different populations to be used for the hypothesis test, 3119 for Habitual users and 276 for Casual users which are based from the number of electric vehicle charging sessions. They also have different means and standard deviations, with the Habitual Users having a mean of 2.85 hours in charging time or duration and a standard deviation of 1.52, while the Casual Users having a mean of 2.7 hours in charging time or duration and a standard deviation of 1.34. We would also use a 5% confidence interval for the hypothesis test to determine if our claim was supported.</p>
 
+<hr>
+
+### **Results** ###
+
+This study deals with how the data about real-time usage or consumption of Electric Vehicle (EV) is not shared instantly among different service providers. Thus, the researchers aimed to define a high-resolution data set from the real-time charging transactions within the company over a year wherein 3,395 real-time transactions nd 85 users with both paid nd free sessions comprises the high-resolution data set. </p>
+
+Among the data set that the researchers have gathered, our group decided then decided to test the hypothesis for the duration of charging session in hours for casual and habitual users. The hypothesis-testing will done by doing the seven-step hypothesis-testing process as recommended by Montgomery and Runger [1]. 
+
+For this study, we will be dealing it using case number 2, test statistic for the difference in means wherein variances are unknown and assumed unequal [2]. </p>
+
+<center>
+
+For Case 2, if $H_0: \mu_1 - \mu_2 = \Delta_0$ is true, the test statistic with formula,
+$$T^*_0=\frac{\bar{x}_1-\bar{x}_2-\Delta_0}{\sqrt{\frac{S^2_1}{n_1}+\frac{S^2_2}{n_2}}}$$
+
+</center>
+
+<center>
+
+is distributed approximately as t with degrees of freedom given by
+$$v=\frac{(\frac{s^2_1}{n_1}+\frac{s^2_2}{n_2})^2}{\frac{(\frac{s^2_1}{n_1})^2}{n_1-1}+\frac{(\frac{s^2_2}{n_2})^2}{n_2-1}}$$
+
+</center>
+
+<center>
+
+If v is not  integer, round down to the nearest integer. </p>
+
+</center>
+
+
+<p class = "tab"> **Step 1: Parameters of Interest** </p>
+<p class = "tab-body"> The parameters of interest are $\mu_1$ and $\mu_2$, and we want to know if $\mu_1$ = $\mu_2$. </p>
+
+<p class = "tab"> **Step 2: Null Hypothesis** </p>
+<p class = "tab-body"> The null hypothesis is $H_0: \mu_1 - \mu_2 = 0$ or $H_0: \mu_1 = \mu_2$. </p>
+
+<p class = "tab"> **Step 3: Alternative Hypothesis** </p>
+<p class = "tab-body"> The alternative hypothesis is $H_0: \mu_1 \neq \mu_2$. </p>
+
+<p class = "tab"> **Step 4: Test Statistic** </p>
+<p class = "tab-body"> The test statistic is given by the formula:
+$$t^*_0=\frac{\bar{x}_1-\bar{x}_2-0}{\sqrt{\frac{s^2_1}{n_1}+\frac{s^2_2}{n_2}}}$$
+<p class = "tab"> **Step 5: Reject $H_0$ if:**
+The degrees of freedom is given by the formula above. We need to compute for the degrees of freedom to find the crtitical t-values. Therefore, </p>
+$$
+\begin{aligned}
+  v &=\frac{(\frac{s^2_1}{n_1}+\frac{s^2_2}{n_2})^2}{\frac{(\frac{s^2_1}{n_1})^2}{n_1-1}+\frac{(\frac{s^2_2}{n_2})^2}{n_2-1}}\\
+  v &=\frac{[\frac{(1.52)^2}{3,119}+\frac{(1.34)^2}{276}]^2}{\frac{[\frac{(1.52)^2}{3,119}]^2}{3,119-1}+\frac{[\frac{(1.34)^2}{276}]^2}{276-1}}\\
+   v &=\frac{[\frac{2.3104}{3,119}+\frac{1.7956}{276}]^2}{\frac{[\frac{2.3104}{3119}]^2}{3,118}+\frac{[\frac{1.7956}{276}]^2}{275}}\\
+   v&=338.9994\\
+   v &\approx338
+\end{aligned}
+$$
+<p class = "tab-body"> The degrees of freedom is 338. </p>
+
+<p class = "tab-body"> Therefore, using $\alpha$ = 0.05 and a fixed significance-level test, we will reject $H_0: \mu_1 = \mu_2$ if $t^*_0 < t_{0.5,338}=1.64$. </p>
+
+<p class = "tab"> **Step 6: Computations** </p>
+<p class = "tab-body"> The given from the data are as follows: </p>
+
+<p class = "tab-body"> **For Habitual Users:**
+$$
+\begin{aligned}
+  n_1 &= 3,119 \\
+  \sigma_1 &= 1.52 \\
+  \bar{x}_1 &= 2.85 \\
+\end{aligned}
+$$
+<p class = "tab-body"> **For Casual Users:**
+$$
+\begin{aligned}
+  n_2 &= 276 \\
+  \sigma_2 &= 1.34 \\
+  \bar{x}_2 &= 2.7 \\
+\end{aligned}
+$$
+<p class = "tab-body"> The known values will be substituted to the test-statistic formula:</p>
+$$
+\begin{aligned}
+  t^*_0&=\frac{\bar{x}_1-\bar{x}_2-0}{\sqrt{\frac{s^2_1}{n_1}+\frac{s^2_2}{n_2}}}\\
+  t^*_0&=\frac{2.85-2.7}{\sqrt{\frac{(1.52)^2}{3,119}+\frac{(1.34)^2}{276}}}\\
+  t^*_0&=\frac{0.15}{\sqrt{\frac{2.3104}{3,119}+\frac{1.7956}{276}}}\\
+  t^*_0&=1.76\\
+\end{aligned}
+$$
+
+<p class = "tab-body"> The test statistic, $t^*_0$, is 1.76. </p>
+
+<p class = "tab-body"> Now, the p-value method will be used and see if we can come up with the same conclusion later on. </p>
+
+<p class = "tab-body"> For the p-value method, the following conclusions will be made:</p>
+$$
+\begin{aligned}
+  p-value < \alpha \text {(We must reject} H_0 \text{.)}\\ 
+  p-value \ge \alpha   \text{(We fail to reject} H_0 \text{.)}\\
+\end{aligned}
+$$
+<p class = "tab-body"> The p-value is 0.039656 for a t-score of 1.76 with degrees of freedom of 338. Looking at the relationship between the p-value and the significance level, $\alpha$, 0.039656 < 0.05. </p>
+
+<p class = "tab"> **Step 7: Conclusions**
+<p class = "tab-body"> By using fixed significance level test, since $t^*_0= 1.76 > t_{0.5,338}=1.64$, we reject the null hypothesis. </p>
+
+<p class = "tab-body"> By using p-value method,0.0.039656 < 0.05, we conclude that we reject the null hypothesis. </p>
+
+<hr>
+
+### **Discussion** ###
+
+<hr>
+
+### **Conclusion** ###
+
+<hr>
+<hr>
+**References:** </p>
+[1]D. C. Montgomery and G. C. Runger, Applied Statistics and Probability for Engineers. 2018.</p>
+[2]D. C. Montgomery and G. C. Runger, Applied Statistics and Probability for Engineers. 2018.</p>
 Article Used:
-Asensio, O.I., Lawson, M.C. & Apablaza, C.Z. Electric vehicle charging stations in the workplace with high-resolution data from casual and habitual users. Sci Data 8, 168 (2021). https://doi.org/10.1038/s41597-021-00956-1
+Asensio, O.I., Lawson, M.C. & Apablaza, C.Z. Electric vehicle charging stations in the workplace with high-resolution data from casual and habitual users. Sci Data 8, 168 (2021). https://doi.org/10.1038/s41597-021-00956-1 </p>
 
 Dataset Used:
-Lawson, Cade; Asensio, Omar; Apablaza, Camila, 2020, "High-resolution electric vehicle charging data from a workplace setting", https://doi.org/10.7910/DVN/QF1PMO, Harvard Dataverse, V4, UNF:6:5zQGek9Q8aVBDV9JMlVRQQ== [fileUNF]
+Lawson, Cade; Asensio, Omar; Apablaza, Camila, 2020, "High-resolution electric vehicle charging data from a workplace setting", https://doi.org/10.7910/DVN/QF1PMO, Harvard Dataverse, V4, UNF:6:5zQGek9Q8aVBDV9JMlVRQQ== [fileUNF] </p>
 
+
+<hr>
