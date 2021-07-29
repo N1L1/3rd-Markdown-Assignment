@@ -23,4 +23,25 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### Introduction ###
+
+In the study by Asensio et.al, real-time Electric vehicle consumption data are not easily accessible and shared across service providers. These can be attributed to how station hosts have little to no incentive to share data with other stakeholders and charging stations being owned by private entities where the data is concentrated by digital platforms and network providers; both restricting access to real-time data. how This makes the analysis of energy used for emerging transportation quite tedious for researchers and policymakers, such as when trying to investigate patterns of charging demand at the high resolution needed to understand individual-level behavior. As a consequence, prevailing methods have primarily relied on the use of simulated data, self-reported surveys and interview data which was inaccurate as they which do not contain real-time information sometimes present challenges such as self-report bias.
+
+To combat this certain problem, the researchers decided to describe a high-resolution data set of EV charging transactions from a large workplace charging program, which included real-time data about 
+charging usage from various EV consumer types such as managers and non-managers, casual and habitual users, 
+and early and late adopters in a large corporate setting. The data from the data set are then sorted into 18 different variables, which could be used to understand the impacts of EV station consumption at a micro-level, optimize revenue models, address questions in several possible areas of inquiry and many others that are related to Electric vehicle consumption data.
+
+After the data was collected and sorted, it is then divided into 3 pairs: Frequency of usage, Stage of adoption and Employee type, which are then divided into five subcategories: duration of charging session (in hours), total consumption (in kWh), repeat transaction per user, session revenue (in USD), and estimated one way daily commute distance (in miles). However, we ultimately decided to do a hypothesis testing for the duration of charging session in hours for casual and habitual users. We decided to compare the two and test if there are charging session of Habitual users are longer than Casual Users. A habitual user is defined as someone who logged more than the median of 19 charging sessions over the course of the data collection period, while a casual user is someone who logged fewer than 19 sessions. The type of users could be used by companies and businesses in order to improve their services, as well as to which type of consumer they should cater more and to determine certain marketing strategies they could enact based on the data to effectively provide their services to their consumers. 
+
+### Methodology ###
+
+The database contains high-resolution data for 3,395 electric vehicle charging sessions from one of the largest workplace charging programs in the United States. Each charging session contains data about the user who logged on each session (such as vehicle type, commute distance, and manager or non-manager status), unique identifiers for the specific charging station and the location where a session was initiated, as well as various usage characteristics (energy output in kWh, time spent charging, and U.S. dollars spent). All data was collected and aggregated automatically and digitally without the need of human readings on a mobile platform used by employees at the firm. Users could also view their EV charging time and visualize their session-level energy consumption and any payments to a network operator. The charging stations were accessible to registered users 24 hours per day, which means that access to the stations was restricted to employees and visitors only. 
+
+Since the data was already collected and sorted, we just had to identify the parameters to be used for our hypothesis testing. We have two different populations to be used for the hypothesis test, 3119 for Habitual users and 276 for Casual users which are based from the number of electric vehicle charging sessions. They also have different means and standard deviations, with the Habitual Users having a mean of 2.85 hours in charging time or duration and a standard deviation of 1.52, while the Casual Users having a mean of 2.7 hours in charging time or duration and a standard deviation of 1.34. We would also use a 5% confidence interval for the hypothesis test to determine if our claim was supported. 
+
+Article Used:
+Asensio, O.I., Lawson, M.C. & Apablaza, C.Z. Electric vehicle charging stations in the workplace with high-resolution data from casual and habitual users. Sci Data 8, 168 (2021). https://doi.org/10.1038/s41597-021-00956-1
+
+Dataset Used:
+Lawson, Cade; Asensio, Omar; Apablaza, Camila, 2020, "High-resolution electric vehicle charging data from a workplace setting", https://doi.org/10.7910/DVN/QF1PMO, Harvard Dataverse, V4, UNF:6:5zQGek9Q8aVBDV9JMlVRQQ== [fileUNF]
 
